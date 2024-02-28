@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Neue";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 16px;
+}
+
+body {
+  background-color: #212121;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #424242;
+  padding: 24px;
+  border-radius: 12px;
+  width: max-content;
+}
+
+.main div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #424242;
+  padding: 4px;
+  transition: background-color .5s ease-in-out;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  background-color: #424242;
+}
+
+button {
+  background-color: #424242;
+  color: #fff;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  opacity: .8;
+  transition: all .4s ease-in-out;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:disabled {
+  background-color: lightgrey;
+  cursor: not-allowed;
+}
